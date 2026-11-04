@@ -176,6 +176,10 @@ td[rowspan]{vertical-align:middle;border-right:1px solid var(--line)}
 .col > .info{flex:none}
 .col > .card,.col > .panel{flex:1}
 .col > .info{width:100%}
+#modalidades .panel.con,#modalidades .panel.dir{background:var(--card);border:1px solid var(--line);transition:background .3s,border-color .3s,box-shadow .3s}
+#modalidades .panel.con:hover,#modalidades .panel.dir:hover{background:linear-gradient(170deg,rgba(119,101,227,.2),var(--card) 50%);border-color:rgba(119,101,227,.55);box-shadow:0 10px 40px -14px rgba(119,101,227,.45)}
+#modalidades .panel .badge{background:var(--violet-soft);color:#CFC7FF}
+#modalidades .panel .flow .circle{background:var(--violet-soft);color:#CFC7FF;box-shadow:inset 0 0 0 1px rgba(119,101,227,.55)}
 /* Calculadora prolija */
 .calc .result{gap:0!important;justify-content:stretch}
 .rblock{display:grid;gap:14px;padding-block:22px}
@@ -361,26 +365,6 @@ footer .wrap{justify-content:center;text-align:center}
       <p class="lead">Cada inmobiliaria elige la que mejor le sirve y puede pasar de una a otra cuando quiera.</p>
     </div>
     <div class="split">
-      <article class="panel con">
-        <span class="badge">Conectada</span>
-        <h3>Con su propia web en MediaCore</h3>
-        <p>Carga la propiedad una sola vez y llega a su web y al portal con un clic. Altas, bajas y cambios de precio se actualizan en los dos lugares.</p>
-        <p class="flow-title">Cómo se suma</p>
-        <ol class="flow">
-          <li><div class="circle">1</div><b>Elige su plan</b><span>STD, PRO o MAX, según las herramientas que necesite.</span></li>
-          <li><div class="circle">2</div><b>Elige el diseño de su web</b><span>Importar su mismo sitio, plantilla de Shift o diseño customizado, sobre la estructura común de MediaCore y con su marca.</span></li>
-          <li><div class="circle">3</div><b>Se conecta al portal</b><span>Su web queda sincronizada con MAC. En caso de necesitarse, se integra su cartera de Tokko Broker.</span></li>
-          <li><div class="circle">4</div><b>Carga sus propiedades</b><span>Da de alta cada propiedad en su web y se carga automáticamente en el portal.</span></li>
-          <li><div class="circle">5</div><b>Recibe sus consultas</b><span>Cada contacto del portal le llega directamente a la inmobiliaria.</span></li>
-        </ol>
-        <div class="cost">
-          <span class="label">Qué paga</span>
-          <div>Su parte del setup y diseño del portal <b>+</b> el plan mensual del portal <b>+</b> diseño de su web <b>+</b> su plan mensual de MediaCore</div>
-        </div>
-      </article>
-
-      <div class="or" aria-hidden="true">O</div>
-
       <div class="col">
       <article class="panel dir">
         <span class="badge">Directa</span>
@@ -404,6 +388,26 @@ footer .wrap{justify-content:center;text-align:center}
           <span>Puede pasar a Conectada cuando quiera tener su web en MediaCore y cargar cada propiedad una sola vez.</span>
         </div>
       </div>
+
+      <div class="or" aria-hidden="true">O</div>
+
+      <article class="panel con">
+        <span class="badge">Conectada</span>
+        <h3>Con su propia web en MediaCore</h3>
+        <p>Carga la propiedad una sola vez y llega a su web y al portal con un clic. Altas, bajas y cambios de precio se actualizan en los dos lugares.</p>
+        <p class="flow-title">Cómo se suma</p>
+        <ol class="flow">
+          <li><div class="circle">1</div><b>Elige su plan</b><span>STD, PRO o MAX, según las herramientas que necesite.</span></li>
+          <li><div class="circle">2</div><b>Elige el diseño de su web</b><span>Importar su mismo sitio, plantilla de Shift o diseño customizado, sobre la estructura común de MediaCore y con su marca.</span></li>
+          <li><div class="circle">3</div><b>Se conecta al portal</b><span>Su web queda sincronizada con MAC. En caso de necesitarse, se integra su cartera de Tokko Broker.</span></li>
+          <li><div class="circle">4</div><b>Carga sus propiedades</b><span>Da de alta cada propiedad en su web y se carga automáticamente en el portal.</span></li>
+          <li><div class="circle">5</div><b>Recibe sus consultas</b><span>Cada contacto del portal le llega directamente a la inmobiliaria.</span></li>
+        </ol>
+        <div class="cost">
+          <span class="label">Qué paga</span>
+          <div>Su parte del setup y diseño del portal <b>+</b> el plan mensual del portal <b>+</b> diseño de su web <b>+</b> su plan mensual de MediaCore</div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
